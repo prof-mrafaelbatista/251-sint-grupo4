@@ -1,0 +1,148 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #1d1d1f;
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar {
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  background: #f9f9f9;
+  padding: 0.7rem 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  color: #1d1d1f !important;
+}
+
+.nav-link, .dropdown-item {
+  color: #1d1d1f !important;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-link.active, .nav-link:hover, .dropdown-item:hover {
+  color: #0071e3 !important;
+}
+
+.container-main {
+  max-width: 900px;
+  margin: 48px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  padding: 40px 32px 32px 32px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #1d1d1f;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.2rem;
+}
+
+.lead, p, label, .form-text, .card-text {
+  color: #515154 !important;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.table {
+  background: #f5f5f7;
+  color: #1d1d1f;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.btn-primary, .btn-success, .btn-secondary, .btn-outline-primary {
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 1.08rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s;
+  padding: 0.6rem 1.5rem;
+}
+
+.btn-primary {
+  background: #0071e3;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #005bb5;
+}
+
+.btn-success {
+  background: #00c851;
+  border: none;
+}
+
+.btn-success:hover {
+  background: #007bff;
+}
+
+.btn-outline-primary {
+  color: #0071e3;
+  border: 1.5px solid #0071e3;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background: #0071e3;
+  color: #fff;
+}
+
+.alert-info {
+  background: #f5f5f7;
+  color: #1d1d1f;
+  border: none;
+  border-radius: 8px;
+}
+
+.card {
+  background: #f5f5f7;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+.card-title, .card-subtitle {
+  color: #0071e3;
+}
+
+.card-text {
+  color: #515154;
+}
+
+hr {
+  border-top: 1.5px solid #0071e3;
+  opacity: 0.2;
+}
+
+@media (max-width: 600px) {
+  .container-main {
+    padding: 16px 4px 16px 4px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}

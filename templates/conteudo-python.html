@@ -1,0 +1,162 @@
+{% extends "modelo.html" %}
+{% block content %}
+<h1>Conteúdo Extenso sobre Python</h1>
+<p>Python é uma linguagem de programação de alto nível, interpretada e de propósito geral, conhecida por sua simplicidade e legibilidade. Criada por Guido van Rossum e lançada em 1991, Python rapidamente se tornou uma das linguagens mais populares do mundo devido à sua sintaxe clara e vasta comunidade.</p>
+
+<h2>História do Python</h2>
+<p>O desenvolvimento do Python começou no final dos anos 1980. Guido van Rossum, seu criador, buscava uma linguagem que fosse fácil de aprender e usar, mas poderosa o suficiente para resolver problemas reais. O nome "Python" foi inspirado no grupo de comédia britânico Monty Python.</p>
+
+<h2>Características Principais</h2>
+<ul>
+  <li><strong>Sintaxe Simples:</strong> O código Python é fácil de ler e escrever, tornando-o ideal para iniciantes.</li>
+  <li><strong>Tipagem Dinâmica:</strong> Não é necessário declarar o tipo das variáveis.</li>
+  <li><strong>Multiparadigma:</strong> Suporta programação orientada a objetos, funcional e imperativa.</li>
+  <li><strong>Grande Biblioteca Padrão:</strong> Python possui módulos para manipulação de arquivos, web, banco de dados, ciência de dados, IA e muito mais.</li>
+  <li><strong>Portabilidade:</strong> Funciona em diversos sistemas operacionais sem alterações no código.</li>
+</ul>
+
+<h2>Aplicações do Python</h2>
+<ul>
+  <li>Desenvolvimento Web (Django, Flask)</li>
+  <li>Análise de Dados e Ciência de Dados (Pandas, NumPy, Matplotlib)</li>
+  <li>Inteligência Artificial e Machine Learning (TensorFlow, scikit-learn)</li>
+  <li>Automação de Tarefas e Scripts</li>
+  <li>Desenvolvimento de Jogos (Pygame)</li>
+  <li>Internet das Coisas (IoT)</li>
+</ul>
+
+<h2>Exemplo de Código</h2>
+<pre><code class="language-python">def saudacao(nome):
+    print(f"Olá, {nome}! Bem-vindo ao mundo Python.")
+
+saudacao("Marconi")
+</code></pre>
+
+<h2>Lógica de Programação em Python</h2>
+<p>A lógica de programação em Python é baseada em conceitos fundamentais como variáveis, estruturas de decisão (if/else), estruturas de repetição (for/while), funções e manipulação de dados. Python se destaca por sua sintaxe clara e direta, tornando o raciocínio lógico mais acessível para iniciantes e profissionais.</p>
+<ul>
+  <li><strong>Variáveis:</strong> São usadas para armazenar valores. Não é necessário declarar o tipo.</li>
+  <li><strong>Estruturas de Decisão:</strong> O comando <code>if</code> permite executar blocos de código conforme condições lógicas.</li>
+  <li><strong>Estruturas de Repetição:</strong> Os comandos <code>for</code> e <code>while</code> permitem repetir ações diversas vezes.</li>
+  <li><strong>Funções:</strong> Permitem organizar o código em blocos reutilizáveis.</li>
+  <li><strong>Listas e Dicionários:</strong> Estruturas de dados muito utilizadas para armazenar coleções de valores.</li>
+  <li><strong>Indentação:</strong> O Python utiliza a indentação para definir blocos de código, o que torna a leitura mais fácil e evita ambiguidades.</li>
+</ul>
+
+<h3>Exemplo de lógica condicional e repetição:</h3>
+<pre><code class="language-python"># Exemplo: Verificar se um número é par ou ímpar e imprimir os números de 1 a 5
+numero = 4
+if numero % 2 == 0:
+    print("O número é par.")
+else:
+    print("O número é ímpar.")
+
+for i in range(1, 6):
+    print(i)
+</code></pre>
+
+<h3>Exemplo de função e uso de listas:</h3>
+<pre><code class="language-python">def dobrar_lista(lista):
+    return [x * 2 for x in lista]
+
+valores = [1, 2, 3, 4]
+print(dobrar_lista(valores))  # Saída: [2, 4, 6, 8]
+</code></pre>
+
+<h3>Exemplo de dicionário e iteração:</h3>
+<pre><code class="language-python">aluno = {"nome": "Ana", "idade": 20, "curso": "Python"}
+for chave, valor in aluno.items():
+    print(f"{chave}: {valor}")
+</code></pre>
+
+<h3>Exemplo de while e break:</h3>
+<pre><code class="language-python">contador = 0
+while True:
+    print("Contando:", contador)
+    contador += 1
+    if contador > 3:
+        break
+</code></pre>
+
+<h2>Mais Exemplos Práticos de Lógica em Python</h2>
+
+<h3>Exemplo de Função Recursiva (Fatorial)</h3>
+<pre><code class="language-python">def fatorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * fatorial(n-1)
+
+print(fatorial(5))  # Saída: 120
+</code></pre>
+
+<h3>Exemplo de Manipulação de Strings</h3>
+<pre><code class="language-python">texto = "Python é incrível!"
+print(texto.upper())      # Saída: PYTHON É INCRÍVEL!
+print(texto.lower())      # Saída: python é incrível!
+print(texto.replace("incrível", "poderoso"))  # Saída: Python é poderoso!
+</code></pre>
+
+<h3>Exemplo de List Comprehension</h3>
+<pre><code class="language-python">quadrados = [x**2 for x in range(10)]
+print(quadrados)  # Saída: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+</code></pre>
+
+<h3>Exemplo de Leitura e Escrita de Arquivos</h3>
+<pre><code class="language-python"># Escrevendo em um arquivo
+with open('exemplo.txt', 'w') as f:
+    f.write('Olá, mundo!')
+
+# Lendo de um arquivo
+with open('exemplo.txt', 'r') as f:
+    conteudo = f.read()
+    print(conteudo)
+</code></pre>
+
+<h3>Exemplo de Tratamento de Exceções</h3>
+<pre><code class="language-python">try:
+    resultado = 10 / 0
+except ZeroDivisionError:
+    print("Não é possível dividir por zero!")
+</code></pre>
+
+<h3>Exemplo de Classe e Orientação a Objetos</h3>
+<pre><code class="language-python">class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+    def apresentar(self):
+        print(f"Olá, meu nome é {self.nome} e tenho {self.idade} anos.")
+
+p1 = Pessoa("João", 30)
+p1.apresentar()
+</code></pre>
+
+<h2>Python no Desenvolvimento Web</h2>
+<p>Python é uma das linguagens mais utilizadas no desenvolvimento web moderno, principalmente devido à sua simplicidade, produtividade e vasta gama de frameworks robustos como Flask e Django. A utilização de Python nas disciplinas de desenvolvimento web é fundamental para que os alunos compreendam conceitos essenciais como:</p>
+<ul>
+  <li><strong>Back-end:</strong> Criação de APIs, manipulação de banco de dados, autenticação de usuários e lógica de negócio.</li>
+  <li><strong>Frameworks:</strong> Uso de frameworks como Flask (para projetos leves e didáticos) e Django (para aplicações robustas e escaláveis).</li>
+  <li><strong>Integração:</strong> Python permite fácil integração com bancos de dados relacionais (MySQL, PostgreSQL) e não relacionais (MongoDB), além de serviços externos via APIs REST.</li>
+  <li><strong>Testes:</strong> Ferramentas como pytest e unittest facilitam a criação de testes automatizados, essenciais para aplicações web profissionais.</li>
+  <li><strong>Desenvolvimento Ágil:</strong> A sintaxe enxuta e a grande quantidade de bibliotecas aceleram o desenvolvimento e a prototipação de sistemas web.</li>
+  <li><strong>Comunidade:</strong> A comunidade ativa garante suporte, atualizações e uma vasta documentação, tornando o aprendizado contínuo.</li>
+</ul>
+<p>Nas disciplinas de desenvolvimento web, Python é frequentemente utilizado para ensinar:</p>
+<ul>
+  <li>Criação de rotas e views</li>
+  <li>Templates dinâmicos com Jinja2</li>
+  <li>Formulários e validação de dados</li>
+  <li>CRUD (Create, Read, Update, Delete) de dados</li>
+  <li>Autenticação e autorização de usuários</li>
+  <li>Consumo e criação de APIs REST</li>
+  <li>Deploy de aplicações web em servidores reais</li>
+</ul>
+<p>Esses conhecimentos são essenciais para o mercado de trabalho, pois a maioria das aplicações modernas exige integração entre front-end e back-end, manipulação de dados e segurança.</p>
+
+<h2>Conclusão</h2>
+<p>Python é uma linguagem que une simplicidade, poder e versatilidade. Sua aplicação no desenvolvimento web permite que estudantes e profissionais criem desde pequenos projetos até grandes sistemas de forma rápida e eficiente. Aprender Python e suas ferramentas web é um diferencial para quem deseja atuar no mercado de tecnologia, seja como desenvolvedor, analista ou pesquisador. Continue explorando, praticando e ampliando seus conhecimentos: o universo Python está em constante evolução! Com isso, nossa comunidade está sempre em constante evolução, venham somar conosco!</p>
+
+<p>Para mais informações, dicas e conteúdos sobre Python, fique à vontade para explorar nosso site e participar ativamente do nosso glossário e chatbot. Estamos aqui para ajudar você a se tornar um expert em Python!</p>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "modelo.html" %}
+{% block content %}
+<h1>Chatbot Gemini</h1>
+<form method="post" action="{{ url_for('chatbot_page') }}" class="mb-3">
+    <div class="mb-3">
+        <label for="pergunta" class="form-label">Digite sua pergunta:</label>
+        <input type="text" class="form-control" id="pergunta" name="pergunta" required autofocus>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+{% if resposta is not none %}
+    <div class="alert alert-info mt-3">
+        <strong>Resposta do Gemini:</strong><br>
+        {{ resposta|safe }}
+    </div>
+{% endif %}
+{% endblock %}
